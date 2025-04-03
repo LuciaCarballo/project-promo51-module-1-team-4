@@ -1,7 +1,22 @@
 @use 'core/reset';
 @use 'components/code';
 @use 'components/links';
-@use 'layout/page';
 @use 'layout/header';
 @use 'layout/footer';
 @use 'pages/index';
+@use 'core/variables' as vars;
+h1{
+    font-family: vars.$font-title;
+    color:vars.$color-title;
+    
+}
+
+p{
+    font-family: vars.$font-body;
+    color:vars.$color-subtitle;
+}
+
+:root{
+    background-color: vars.$color-bg;
+
+}
