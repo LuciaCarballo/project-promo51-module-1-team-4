@@ -5,7 +5,7 @@
 @use 'layout/footer';
 @use 'pages/index';
 @use 'core/variables' as vars;
-h1{
+h1, h2, h3, h4{
     font-family: vars.$font-title;
     color:vars.$color-title;
     
