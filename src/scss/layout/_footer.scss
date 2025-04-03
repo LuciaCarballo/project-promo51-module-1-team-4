@@ -1,13 +1,12 @@
 @use '../core/variables' as vars;
 
-
 .page__footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-    padding: 1rem;
+    padding-left: 5%;
     color: vars.$color-secondary;
+}
+
+.footer__servicios{
+    width: 70%;
 }
 
 .logo__footer{
@@ -19,6 +18,7 @@
 .logo__icons{
     margin-left: 15%;
     margin-bottom:5%;
+    padding-bottom:10%;
 }
 
 i {
