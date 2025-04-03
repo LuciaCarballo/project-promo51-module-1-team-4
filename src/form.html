@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Adalab Travel</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./scss/main.scss" />
     <link rel="icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="../src/scss/layout/_form.scss" />
 <!--Fuente titulos-->
 <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
 
-<!--Fuente cuerpo de texto-->
-<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ <!--Fuente cuerpo de texto-->
+ <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Onest:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="./scss/main.scss" />
+ <link rel="icon" href="./images/favicon.png" />
 
   </head>
 
@@ -29,28 +30,48 @@
 
 
       <main>
+
+        <section class=form>
+
+          
         <h2>SUSCRIBETE</h2>
 
-        <form action="ruta servidor" method="post">
-          <label for="Email">Email</label>
-          <input type="email" id="email" name="email" required>
+        <form  class=form__inputs action="ruta servidor" method="post">
 
+          <div>
+            <label for="Email" ></label>
+          <input type="email" id="email" name="email" placeholder="Email" required >
+
+          </div>
+
+          <div>
+            <label for="nombre"></label>
+          <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+          </div>
+          
+            <div>
+              <label for="comentario"></label>
+          <input type="textarea" id="comentario" name="comentario" placeholder="Comentario" >
+
+
+            </div>
      
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required>
-
-          <label for="comentario">Comentario</label>
-          <input type="textarea" id="comentario" name="comentario" >
-
-          <button type="submit">Enviar</button>
+          <div>
+            <button type="submit">Enviar</button>
+          </div>
+          
+         
 
         </form>
 
-        <section>mapa
+        <div>mapa
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6665123.144219006!2d120.91078292433633!3d11.647604442465235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x324053215f87de63%3A0x784790ef7a29da57!2sFilipinas!5e0!3m2!1ses!2ses!4v1743703519321!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        </section>
+        </div>
           
+
+        </section>
+
         </p>
       </main>
       <load src="./partials/footer.html" />

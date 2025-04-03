@@ -9,3 +9,21 @@
 } */
 
 
+.form{
+ background-color:vars.$color-subtitle ;
+ 
+
+    &__inputs {
+        /* display: flex;
+        flex-direction: column;
+        background-color: red($color: #000000); */
+
+        display: grid;
+        grid-template-columns: 80%;
+        justify-content: space-between;
+
+
+        
+    }
+
+}
