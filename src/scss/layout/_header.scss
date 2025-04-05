@@ -77,11 +77,11 @@ details > summary::marker,
   text-decoration: none;
   padding: 10px;
   display: block;
-  border-bottom: 1px solid #5D50C6;
+  border-bottom: 1px solid #e1ffbb;
   font-family: vars.$font-title;
 }
 .header_menu a:hover {
-  background-color: #5D50C6;
+  background-color: #009990;
 }
 
 /* .header_div:hover .header_menu {
@@ -89,7 +89,7 @@ details > summary::marker,
 } */
 
 .header_boton{
-  background-color: #5D50C6;
+  background-color: #009990;
   border: none;
   padding:20px 20vh; 
   font-size: 1rem; 
@@ -148,6 +148,9 @@ details > summary::marker,
   font-size: 1rem; 
   font-family: vars.$font-title;
   }
+  .header_li:hover{
+    color: vars.$color-subtitle;  
+  } 
 
   .header_section1{
     display: grid;
@@ -166,6 +169,22 @@ details > summary::marker,
     grid-area: header_img1;
     font-size: 2.4rem;
     text-align: justify;
+  }
+
+  .header_boton{
+    padding:20px 4vh; 
+    position: absolute;
+    top: 47vw;
+    left: 7vw;
+  }
+  .header_boton:hover{
+    background-color:vars.$color-subtitle;
+  }
+  .header_boton a{
+    color:vars.$color-subtitle;
+  }
+  .header_link:hover  {
+    color: vars.$color-title;
   }
   
   
