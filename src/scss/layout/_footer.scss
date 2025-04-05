@@ -3,10 +3,26 @@
 .page__footer {
     padding-left: 5%;
     color: vars.$color-secondary;
+    display:flex;
+    flex-direction: column;
+}
+
+.pre__footer{
+    display: flex;
+    flex-direction: column;
+}
+.footer__info{
+    text-align: center;
 }
 
 .footer__servicios{
-    width: 70%;
+    text-align: left;
+    padding-inline: 5%;
+}
+.footer__img img{
+    width: 60%;
+    height: auto;
+    padding-block: 2rem;
 }
 
 .logo__footer{
@@ -26,7 +42,6 @@ i {
     font-size: 20px;
     margin-right:15px;
 }
-.footer__img img{
-    width: 50%;
-    height: auto;
+.nav__footer{
+    display:none;
 }
