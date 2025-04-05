@@ -3,16 +3,57 @@
 .page__footer {
     padding-left: 5%;
     color: vars.$color-secondary;
+    display:flex;
+    flex-direction: column;
 }
 
-.footer__servicios{
-    width: 70%;
+.pre__footer{
+    display: flex;
+    flex-direction: column;
 }
+.footer__info{
+    text-align: center;
+}
+.footer__info h2{
+    font-size: 45px;
+    padding: 2rem;
+    line-height: 1.2em;
+}
+.footer__info h4{
+    font-size: 20px;
+}
+
+.footer__info p{
+    font-size: 15px;
+} 
+
+.footer__servicios{
+    text-align:left;
+    padding-left: 5%;
+    padding-right: 20%;
+}
+.footer__img img{
+    width: 60%;
+    height: auto;
+    padding-left:2rem;
+    margin-top:2rem;
+}
+.mejores__servicios img{
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+}
+
+
+
+
+/*footer abajo*/
 
 .logo__footer{
     padding:20px;
     display:flex;
     gap:20px;
+    margin-top: 25px;
 }
 
 .logo__icons{
@@ -26,7 +67,6 @@ i {
     font-size: 20px;
     margin-right:15px;
 }
-.footer__img img{
-    width: 50%;
-    height: auto;
+.nav__footer{
+    display:none;
 }
