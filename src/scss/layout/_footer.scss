@@ -70,3 +70,29 @@ i {
 .nav__footer{
     display:none;
 }
+
+@media all and (min-width: 1200px){
+    .pre__footer{
+        display:flex;
+        flex-direction: row-reverse;
+        margin-top: 15%;
+    }
+
+    .footer__img img{
+        width: 80%;
+        height: auto;
+        padding-left:1rem;
+        margin-top:3rem;
+    }
+    .footer__info{
+        width: 50%;
+    }
+    .logo__icons{
+        margin-left: 5%;
+        margin-bottom:0;
+        padding-bottom:3%;
+    }
+    .mejores__servicios img{
+        display: flex;
+    }
+}
