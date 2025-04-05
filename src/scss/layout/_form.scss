@@ -23,12 +23,21 @@
         background-color: red($color: #000000); */
 
         display: grid;
-        grid-template-columns: 80%;
+        grid-template-columns: 100%;
         justify-content: space-between;
         gap: 2rem;
         padding-left: 10%;
         padding-top: 1rem;
+        justify-content: center;
+        text-align: center;
+        border-radius: 10px;
         
+    }
+
+    
+    &__boton{
+        justify-content: center;
+
     }
 
     &__container-mapa{        
