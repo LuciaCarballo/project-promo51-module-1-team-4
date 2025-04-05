@@ -1,5 +1,17 @@
 @use '../core/variables' as vars;
 
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  display: inline-block;
+  list-style: none; /* Quitar el estilo de lista */
+}
+details > summary::marker,
+    summary::-webkit-details-marker {
+      display: none;
+      list-style: none;
+    }
 .header_section{
   display: flex ;
   gap: 20px;
@@ -8,9 +20,11 @@
 }
 .header_div{
   display: grid;
-  position: absolute;
-  right: 4vw;
-  top: 43px;
+  position: relative;
+  display: inline-block;
+  left: 85vw;
+  top: -15vw;
+  width: auto;
 }
 
 .header_nav{
@@ -24,15 +38,11 @@
   padding: 30px;
   gap: 20px;
   padding-top: 40px;
-
-
-
 }
   
 .header_img1{
   height: auto ;
   width: 100%;
-
 }
 
 .header_span{
@@ -40,25 +50,27 @@
 }
 
 .header_h2{
-  font-size: 2.2rem;
+  font-size: 2.1rem;
+  text-align: center;
+}
+.header_h2_1{
+  display: none;
+  font-size: 2.1rem;
   text-align: center;
 }
 
 .header_img{
   cursor: pointer ;
-  
-  
-
 }
 
 .header_menu{
-  display: none; /* Ocultar el menú inicialmente */
+  /* display: none;  */
   position: absolute;
-   /* Ubicación del menú debajo de la imagen */
+  top: -10px; /* Ubicación del menú debajo de la imagen */
   width: 150px;
   left: -160px;
-
-}
+  z-index: 10000;
+} 
 
 .header_menu a {
   color:vars.$color-title;
@@ -66,12 +78,96 @@
   padding: 10px;
   display: block;
   border-bottom: 1px solid #5D50C6;
-
+  font-family: vars.$font-title;
 }
 .header_menu a:hover {
   background-color: #5D50C6;
 }
 
-.header_div:hover .header_menu {
-  display: block; /* Mostrar el menú al pasar el mouse sobre la imagen */
+/* .header_div:hover .header_menu {
+  display: block; 
+} */
+
+.header_boton{
+  background-color: #5D50C6;
+  border: none;
+  padding:20px 20vh; 
+  font-size: 1rem; 
+  text-align: center; 
+  cursor: pointer; 
+  display:inline-block;
+  border-radius: 30px; 
+  margin-top: 15px;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px #e1ffbb; /* Sombra debajo del botón */
 }
+
+.header_boton a{
+  color:vars.$color-subtitle;
+  text-decoration: none;
+}
+
+.header_div2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  gap: 30px;
+}
+
+
+  @media all and (min-width: 1200px) {
+
+    .header_section{
+    padding-left: 12vh;
+  }
+    .header_div{
+    display: none;
+  }
+
+  .header_nav{
+    display: flex;
+    
+    justify-content: flex-end; 
+    padding-right: 20px
+  }
+
+  .header_ul{
+    position: relative;
+    top: -50px;
+    flex-direction: row;
+    list-style: none; 
+    padding-right: 70px;
+    display: flex; 
+    gap: 60px; 
+  }
+
+  .header_li{
+  text-decoration: none; 
+  color: vars.$color-title; 
+  font-size: 1rem; 
+  font-family: vars.$font-title;
+  }
+
+  .header_section1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+      "header_img1 header_h2_1";
+    padding: 65px;  
+  }
+
+  .header_img1 {
+    grid-area: header_h2_1; 
+  }
+
+  .header_h2_ {
+    display: block;
+    grid-area: header_img1;
+    font-size: 2.4rem;
+    text-align: justify;
+  }
+  
+  
+}
+    
