@@ -1,5 +1,17 @@
 @use '../core/variables' as vars;
 
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  display: inline-block;
+  list-style: none; /* Quitar el estilo de lista */
+}
+details > summary::marker,
+    summary::-webkit-details-marker {
+      display: none;
+      list-style: none;
+    }
 .header_section{
   display: flex ;
   gap: 20px;
@@ -52,7 +64,7 @@
 }
 
 .header_menu{
-  display: none; /* Ocultar el menú inicialmente */
+  /* display: none;  */
   position: absolute;
   top: -10px; /* Ubicación del menú debajo de la imagen */
   width: 150px;
@@ -72,9 +84,9 @@
   background-color: #5D50C6;
 }
 
-.header_div:hover .header_menu {
+/* .header_div:hover .header_menu {
   display: block; 
-}
+} */
 
 .header_boton{
   background-color: #5D50C6;
