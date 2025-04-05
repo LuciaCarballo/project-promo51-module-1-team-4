@@ -1,3 +1,4 @@
+@use '../core/variables' as vars;
 
 .header_section{
   display: flex ;
@@ -14,4 +15,63 @@
 
 .header_nav{
   display: none;
+}
+
+.header_section1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+  padding-top: 40px;
+
+
+
+}
+  
+.header_img1{
+  height: auto ;
+  width: 100%;
+
+}
+
+.header_span{
+  color:vars.$color-subtitle;
+}
+
+.header_h2{
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.header_img{
+  cursor: pointer ;
+  
+  
+
+}
+
+.header_menu{
+  display: none; /* Ocultar el menú inicialmente */
+  position: absolute;
+   /* Ubicación del menú debajo de la imagen */
+  width: 150px;
+  left: -160px;
+
+}
+
+.header_menu a {
+  color:vars.$color-title;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  border-bottom: 1px solid #5D50C6;
+
+}
+.header_menu a:hover {
+  background-color: #5D50C6;
+}
+
+.header_div:hover .header_menu {
+  display: block; /* Mostrar el menú al pasar el mouse sobre la imagen */
 }
