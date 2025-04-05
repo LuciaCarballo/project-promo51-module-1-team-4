@@ -8,9 +8,11 @@
 }
 .header_div{
   display: grid;
-  position: absolute;
-  right: 4vw;
-  top: 43px;
+  position: relative;
+  display: inline-block;
+  left: 85vw;
+  top: -15vw;
+  width: auto;
 }
 
 .header_nav{
@@ -40,7 +42,12 @@
 }
 
 .header_h2{
-  font-size: 2.2rem;
+  font-size: 2.1rem;
+  text-align: center;
+}
+.header_h2_1{
+  display: none;
+  font-size: 2.1rem;
   text-align: center;
 }
 
@@ -54,11 +61,12 @@
 .header_menu{
   display: none; /* Ocultar el menú inicialmente */
   position: absolute;
-   /* Ubicación del menú debajo de la imagen */
+  top: -10px; /* Ubicación del menú debajo de la imagen */
   width: 150px;
   left: -160px;
+  z-index: 10000;
 
-}
+} 
 
 .header_menu a {
   color:vars.$color-title;
@@ -73,5 +81,119 @@
 }
 
 .header_div:hover .header_menu {
-  display: block; /* Mostrar el menú al pasar el mouse sobre la imagen */
+  display: block; 
 }
+
+.header_boton{
+  background-color: #5D50C6;
+  border: none;
+  padding:20px 20vh; 
+  font-size: 1rem; 
+  text-align: center; 
+  cursor: pointer; 
+  display:inline-block;
+  border-radius: 30px; 
+  margin-top: 15px;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px #e1ffbb; /* Sombra debajo del botón */
+  
+}
+
+.header_boton a{
+  color:vars.$color-subtitle;
+  text-decoration: none;
+
+}
+.header_div2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  gap: 30px;
+}
+.header_div3 {
+  display: none;
+}
+.header_boton1{
+  display:none;
+}
+
+
+
+
+  @media all and (min-width: 1200px) {
+
+    .header_section{
+    padding-left: 12vh;
+  }
+    .header_div{
+    display: none;
+  }
+  .header_nav{
+    display: flex;
+    
+    justify-content: flex-end; /* Alinea los elementos a la derecha */
+    padding-right: 20px
+  }
+  .header_ul{
+    position: relative;
+    top: -50px;
+    flex-direction: row;
+    list-style: none; /* Elimina los puntos de la lista */
+    padding-right: 70px;
+    display: flex; /* Coloca los elementos <li> en fila */
+    gap: 60px; 
+  }
+  .header_li{
+  text-decoration: none; 
+  color: vars.$color-title; 
+  font-size: 1rem; 
+  font-family: vars.$font-title;
+  }
+  .header_section1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+      "header_img1 header_h2_1";
+    padding: 65px;  
+  }
+  .header_img1 {
+    grid-area: header_h2_1; /* Asigna esta área al elemento de la imagen */
+  }
+  .header_h2 {
+    display:none;
+  }
+  .header_h2_1 {
+    display: block;
+    grid-area: header_img1; /* Asigna esta área al elemento del encabezado */
+    font-size: 2.4rem;
+    text-align: justify;
+  }
+  .header_div2{
+    display: none;
+  }
+  .header_boton a{
+    display: none;
+  }
+  .header_div3{
+    position: relative;
+    background-color: #5D50C6;
+    border: none;
+    padding:20px 5vh; 
+    font-size: 1rem; 
+    text-align: center; 
+    cursor: pointer; 
+    display:inline-block;
+    border-radius: 30px; 
+    margin-top: 15px;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px #e1ffbb; /* Sombra debajo del botón */
+  }
+  .header_boton1 a{
+    color:vars.$color-subtitle;
+    text-decoration: none;
+  }
+    
+    
+  }
+    
