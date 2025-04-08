@@ -168,16 +168,16 @@
  .main__section2-number {
    font-size: 2rem;
    font-weight: bold;
-   color:variable-exists($name: --color-subtitle);
+   color:vars.$color-subtitle;
    margin-bottom: 0.5rem;
  }
 
  .main__section2-label {
    font-size: 1.3rem;
    text-align: center;
-   font-family: vars (--font-body);
+   font-family:vars.$font-body;
    font-weight: bold;
-   color:variable-exists($name: --color-subtitle);
+   color:vars.$color-subtitle;
    
   
  }
