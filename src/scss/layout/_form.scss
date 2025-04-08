@@ -1,14 +1,5 @@
 @use '../core/variables' as vars;
 
-/* body {
-    padding: 2rem;
-    height: 100vh;
-    background-image: url('../images/bg-adalab.png');
-    background-color: vars.$color-bg;
-    font-family: vars.$font-main;
-} */
-
-
 .form{
     background-color:vars.$color-subtitle ;
     margin: 2%;
@@ -16,16 +7,16 @@
     padding: 10%;
     height: fit-content;
     justify-content: left;
+    
  
  
     &__title{
         font-size:  2rem;
-            } 
-
+    } 
 
     &__styled {
 
-     display: grid;
+        display: grid;
         grid-template-columns: 100%;
         justify-content: space-between;
         gap: 2rem;
@@ -39,146 +30,110 @@
             border-radius: 20px;
             border:none;
             padding: 1rem; 
+        }
 
+        .form__styled__divbutton{
+            display:flex;
+        }
 
-       /*  display: grid;
-        grid-template-columns: 100%;
-        justify-content: center;
-        align-items: start;
-        gap:2rem;
-         */
-          
-        
-          /*   .form__styled__div{
-            width: 100%;
-            height: 2.5rem;
-                
-            } */
-
-        .styled-input, textarea{
-            
+        .styled-input, textarea{            
             border-radius: 20px;
             border:none;            
-            font-family:vars.$font-body;
-                
+            font-family:vars.$font-body;             
             
-        }
+        }   
     
-    }
-
-    
+        
     .styled-boton{
         all:unset;
         width: 25%;
         font-family:vars.$font-body;
         justify-content: center;
         border-radius: 20px;
-        background-color:vars.$color-secondary;
-        
-        padding: 5%;
+        background-color:vars.$color-secondary;        
+        padding: 20px;
         color:white   ;
-        font-weight: 400;
-        
-
-    }
+        font-weight: 400;       
+        }
 
     .styled-boton:hover{ 
-        background-color:vars.$color-bg;
-        
-        
-    }
-}
-
-
-
-.map{        
-    width: 100%; /* Asegura que ocupe todo el ancho disponible */
-    padding-top: 100%; /* Mantiene una proporción cuadrada */
-    position: relative; /* Necesario para que el iframe se ajuste dentro del contenedor */
-    
-    &__iframe{
-        position: absolute; /* Se ajusta al contenedor */
-        top: 0;
-        left: 0;
-        width: 100%; /* Ocupa todo el ancho del contenedor */
-        height: 100%; /* Ocupa todo el alto calculado */
-        border: none; /* Elimina el borde predeterminado */
-    }
-         
-}
-
-
-@media all and (min-width: 1200px) {
-.main__form{
-    margin: 5%;
-    display:grid;
-    width: 100%;
-    grid-template-columns: 47% 47%;
-    gap: 20px;
-    height: fit-content;
-    border-radius: 30px;
-    
-    
-    
-
-    .form{
-        height: auto;
-        min-height: 300px;
-        margin: 0;
-        gap:50px;
-
-        &__title{
-            padding-top: 10px;
-            padding-bottom: 20px;
-            
-        }
-
-        .styled-input{
-            height: 4rem;
-           
-        }
-
-        .styled-boton{ 
-            font-size: 1,5rem ;
-            
-        }
-
-        
-        
+        background-color:vars.$color-bg;      
+            }
     }
 
-    .map {  
+    .map{        
+        width: 100%; 
+        padding-top: 100%; 
+        position: relative; 
         
-       /*  height: 100%; */
-        height: 500px;
-
-        &__iframe { 
-           
-            width: 100%;
-            height: 100%;
-
-        }
-
-    }
-
-    }
-}
-
-
-
-  
- /*    .map {        
-        width: 50%;
-        padding-top: 50%;
-        position: relative;
-        
-        &__iframe {
-            position: absolute;
+        &__iframe{
+            position: absolute; 
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
+            width: 100%; 
+            height: 100%; 
         }
-    }  */
- }
+         
+    }
+
+}
+
+@media all and (min-width: 1200px) 
+
+
+
+
+{
+    .main__form{
+        display:grid;
+        grid-template-columns: 47% 47%;
+        margin: 5%;
+        width: 100%;
+        gap: 20px;
+        height: fit-content;
+        border-radius: 30px;         
+
+        .form{
+            margin: 0;
+         /*    height: auto;
+            min-height: 300px;
+            margin: 0;
+            gap:50px; */
+
+            &__title{
+                padding-top: 10px;
+                padding-bottom: 20px;            
+            }
+
+            .styled-input{
+                height: 4rem;           
+            }
+
+            .form__styled__div{
+                height: 4rem;
+            }
+
+            .styled-boton{ 
+                font-size: 1,5rem ;
+                padding: 2%;
+                height: 2rem;
+                width: 100px;            
+            }       
+            
+        }
+
+        .map  {                
+            height: auto; /* Se adapta al contenido */
+             width: 100%;
+
+            &__iframe {            
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+    }
+}
+    
+  
