@@ -20,6 +20,10 @@ details > summary::marker,
   padding-top: 30px ;
   align-items: center;
 }
+.header_h2{
+  font-size:2rem;
+  
+}
 .header_logo{
   height: 46px;
   width: 46px;
@@ -126,7 +130,7 @@ details > summary::marker,
   color:vars.$color-subtitle;
 }
 
-.header_h2{
+.header_h1{
   font-size: 2.1rem;
   text-align: center;
 }
@@ -186,7 +190,7 @@ details > summary::marker,
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-areas: 
-      "header_img1 header_h2";
+      "header_img1 header_h1";
     padding: 65px;  
   }
 
@@ -194,7 +198,7 @@ details > summary::marker,
     grid-area: header_h2; 
   }
 
-  .header_h2{
+  .header_h1{
     text-align: left ;
     padding-left: 2vh;
   }
