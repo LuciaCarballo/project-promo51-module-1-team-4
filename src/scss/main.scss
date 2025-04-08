@@ -9,11 +9,18 @@
 @use 'core/variables' as vars;
 
 
-h1, h2, h3, h4{
+h1, h2{
+    font-size: 45px;
     font-family: vars.$font-title;
     color:vars.$color-title;
-    line-height: 2.5em;
+    line-height: 1.5em;
     
+}
+h3, h4{
+    font-size: 20px;
+    font-family: vars.$font-title;
+    color:vars.$color-title;
+    line-height: 2em;
 }
 
 p{

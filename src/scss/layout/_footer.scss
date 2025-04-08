@@ -79,20 +79,44 @@ i {
     }
 
     .footer__img img{
-        width: 80%;
+        width: 70%;
         height: auto;
         padding-left:1rem;
-        margin-top:3rem;
+        margin-top:2rem;
     }
     .footer__info{
         width: 50%;
+        text-align: left;
     }
+
+    .footer__servicios {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        align-items: center;
+
+    }
+
     .logo__icons{
         margin-left: 5%;
         margin-bottom:0;
         padding-bottom:3%;
     }
-    .mejores__servicios img{
+    
+    .nav__footer{
         display: flex;
+        flex-direction: column;
+        text-align: end;   
+        margin-top: -10%;     
+    }
+    .nav__footer a {
+        list-style: none;
+        text-decoration: none;
+        color:vars.$color-title;
+        font-family:vars.$font-title;
+        line-height: 3em;
+    }
+    .nav__footer a:hover{
+        color:vars.$color-subtitle;
+    }
 
-    }}
+}
