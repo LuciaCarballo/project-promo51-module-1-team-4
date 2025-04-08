@@ -44,7 +44,7 @@
    
    
    .main__section-p{
-     font-family: vars (--font-body);
+     font-family:vars.$font-body;
      font-size: 1.2rem;
      padding-top: 3%;
      padding-bottom: 7%;
@@ -130,17 +130,17 @@
  .main__section2-title {
    font-size: 2rem;
    font-weight: bold;
-   color:vars(--color-title); 
+   color:vars.$color-title; 
    text-transform: uppercase; 
    margin-bottom: 0.5rem;
-   font-family: vars (--font-title);
+   font-family:vars.$font-title;
  }
 
  .main__section2-subtitle {
   font-size: 1.5rem;
-  color:variable-exists(--color-subtitle); 
+  color:vars.$color-subtitle; 
   margin-bottom: 20%;
-  font-family: vars (--font-body);
+  font-family:vars.$font-body;
   padding-right: 20%;
   
  }
