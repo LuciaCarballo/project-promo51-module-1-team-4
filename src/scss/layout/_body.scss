@@ -1,63 +1,75 @@
- * {    box-sizing: border-box;
+
+@use '../core/variables' as vars;
+
+* {    box-sizing: border-box;
      margin: 0;
      padding: 0;
    }
 
  .main{
      width: 100vw;
-     margin-left:20%
+     margin-left:8%
    
-   
-
  }
+
    .main__section-article{
-      display: flex;
-      flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     gap: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
     
    }
+
    .main__section-subtitle{
      margin-top: 10%;
-     margin-left: 10%;
+     margin-left: 25%;
    }
 
 
    .main__section-img{
-     width: 60%;
-     height: 30%;
-     margin-top:5% ;
-     border-radius:25px 25px 0 0;
+    width: 90%;
+    height: 30%;
+    margin-top:5% ;
+    border-radius:25px 25px 0 0;
+    transition: transform 0.3s ease, 
+    box-shadow 0.3s ease; 
+    }
+    
+    .main__section-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    } 
     
    
-   }
+   
    .main__section-p{
      font-family: vars (--font-body);
      font-size: 1.2rem;
      padding-top: 3%;
      padding-bottom: 7%;
      padding-left: 8%;
-    padding-right: 2%;
-     width: 60%;
+     padding-right: 2%;
+     width: 90%;
      height: 25%;
      background-color: #074799;
      border-radius: 0 0 25px 25px;
      box-shadow: 2px 2px 10px rgba(10, 2, 26, 0.93);
     
-    
-    
    }
+
    .main__section2-text{
      display: none;
 
    }
+
    .main__section2-img{
-     margin-top: 10%;
- width: 70%; 
- height: 30%;
+    margin-top: 10%;
+    width: 90%; 
+    height: 35%;
 
    }
+
    @media all and (min-width: 1200px) {
 
      .main{
@@ -66,18 +78,17 @@
        margin-top: 10%;
       
      }
+
      .main__section-article{
        display: grid;
        grid-template-columns: 23% 23% 23%;
-      
        gap: 6%;
        margin-top: 5%;
      
-     
-     
     }
+
     .main__section-img{
-    width: 120%;
+     width: 120%;
      height: 30%;
      margin-top:5% ;
     }
@@ -86,6 +97,7 @@
      font-size: 1.5rem;
      width: 120%;
   }
+
    .main__section-subtitle{
      margin-left:5%;
      font-size: 1.8rem;
@@ -101,56 +113,56 @@
   }
    .main__section2-img{
      width: 40vw;
-    height: 45vh;
-     margin-left: 20%;
+    height: 48vh;
+     margin-left: 25%;
    }
 
 
 
  .main__section2-text {
-   display: block;
-   text-align: left;
-   padding: 2rem;
+  display: block;
+  text-align: left;
+  padding: 2rem;
   margin-left: 20%;
-   margin-top: 2%;
+  margin-top: 2%;
  }
 
  .main__section2-title {
    font-size: 2rem;
    font-weight: bold;
-   color:vars(--color-title); // Color del título
-   text-transform: uppercase; // expliacion de la palabra
+   color:vars(--color-title); 
+   text-transform: uppercase; 
    margin-bottom: 0.5rem;
    font-family: vars (--font-title);
  }
 
  .main__section2-subtitle {
-   font-size: 1.5rem;
-   font-weight: bold;
-   color:variable-exists(--color-subtitle); 
-   margin-bottom: 30%;
-   font-family:  variable-exists(--font-body );
+  font-size: 1.5rem;
+  color:variable-exists(--color-subtitle); 
+  margin-bottom: 20%;
+  font-family: vars (--font-body);
   padding-right: 20%;
- 
   
  }
 
  .main__section2-stats {
-  
    display: flex;
    justify-content: flex-start;
-   gap: 5rem; 
+   gap: 2rem; 
+   
  }
 
- .main__section2-item {   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-  //  background-color: #f9f9f9; 
+ .main__section2-item {   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #009990;
-   border-radius: 10px;
-   padding: 1rem 2rem;
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  padding:16px 16px;
+  width: 15vw;
+   
  }
 
  .main__section2-number {
@@ -162,10 +174,10 @@
 
  .main__section2-label {
    font-size: 1.3rem;
-   font-family:  variable-exists(--font-body );
-   color: black;
    text-align: center;
    font-family: vars (--font-body);
+   font-weight: bold;
+   color:variable-exists($name: --color-subtitle);
    
   
  }
