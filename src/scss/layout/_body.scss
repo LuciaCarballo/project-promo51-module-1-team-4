@@ -146,7 +146,8 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   background-color: #f9f9f9; 
+  //  background-color: #f9f9f9; 
+  background-color: #009990;
    border-radius: 10px;
    padding: 1rem 2rem;
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
@@ -155,15 +156,18 @@
  .main__section2-number {
    font-size: 2rem;
    font-weight: bold;
-   color: #ff5722; 
+   color:variable-exists($name: --color-subtitle);
    margin-bottom: 0.5rem;
  }
 
  .main__section2-label {
    font-size: 1.3rem;
    font-family:  variable-exists(--font-body );
-  color: #333;
+   color: black;
    text-align: center;
+   font-family: vars (--font-body);
+   
+  
  }
   }
   
