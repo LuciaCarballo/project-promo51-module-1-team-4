@@ -35,7 +35,6 @@ details > summary::marker,
   display: inline-block;
   left: 85vw;
   top: -15vw;
-  width: auto;
 }
 
 .header_nav{
@@ -191,11 +190,12 @@ details > summary::marker,
     grid-template-columns: 50% 50%;
     grid-template-areas: 
       "header_img1 header_h1";
-    padding: 65px;  
+    padding: 65px; 
+    margin-bottom: 10%; 
   }
 
   .header_img1 {
-    grid-area: header_h2; 
+    grid-area: header_h1; 
   }
 
   .header_h1{
@@ -205,11 +205,18 @@ details > summary::marker,
 
   .header_boton{
     padding:20px 4vh; 
-    position: absolute;
     top: 47vw;
     left: 7vw;
   }
 
+  .header_div2 {
+    display: block;
+    text-align: left;
+    justify-content: left;
+    gap: 30px;
+    margin-left: 5%;
+    margin-top: -30%;
+  }
 
 }
     
